@@ -1,0 +1,8 @@
+Python can be used to run xApps within an O-RAN (Open Radio Access Network) environment. The O-RAN SC provides a dedicated xApp Python Framework to simplify developing Near-RT RIC applications. These Python-based xApps are typically containerized using Docker, allowing them to run inside Kubernetes. 
+
+Key details about using Python in xApps:
+Frameworks: The xapp-frame-py provides common features for Python apps, including RMR (RIC Message Router) for communication and SDL (Shared Data Layer) for database access.
+Deployment: Python xApps are packaged as Docker images.
+Functionality: They can handle A1 policies, E2 subscription/control, and KPI monitoring (e.g., using E2SM-KPM/RC).
+Examples: Examples of Python xApps include those used for RAN slicing and AI/ML-driven resource management.
+Development: Developers can create a main.py file, containerize it, and deploy it to a Near-RT RIC environment.
