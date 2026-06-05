@@ -1,10 +1,10 @@
 ┌─────────────────────────────────────────────────────────────┐
-│                    Your Project System                       │
+│                    Your Project System                      │
 │                                                             │
 │  ┌─────────────┐    E2 Interface    ┌──────────────────┐   │
-│  │ gNB          │ ←────────────────→ │  Near-RT RIC     │   │
-│  │ Simulator    │   SCTP/E2AP        │  (Docker         │   │
-│  │             │                    │   Compose)        │   │
+│  │ gNB         │ ←────────────────→ │  Near-RT RIC     │   │
+│  │ Simulator   │   SCTP/E2AP        │  (Docker         │   │
+│  │             │                    │   Compose)       │   │
 │  │ Generates:  │                    │                  │   │
 │  │ - UE CQI    │                    │  ┌────────────┐  │   │
 │  │ - Buffer    │                    │  │ Your xApp  │  │   │
@@ -19,7 +19,7 @@
 └─────────────────────────────────────────────────────────────┘
 
 ┌──────────────────────────────────────────────────────────────┐
-│                    AUDIENCE SEES THIS                         │
+│                    AUDIENCE SEES THIS                        │
 │                                                              │
 │  Terminal 1:          Terminal 2:         Terminal 3:        │
 │  gNB Simulator        RIC Platform        Your xApp          │
@@ -27,13 +27,13 @@
 │   metrics via E2)      Compose)            Scheduler         │
 │                                            running inside    │
 │  Logs show:           Logs show:           RIC)              │
-│  "Sending CQI=12      "E2 connected"                         │
-│   Buffer=800B"        "Indication rx"     "QAOA solved in    │
-│                                            45ms"             │
-│                                           "Decision sent     │
+│  Sending CQI=12      E2 connected                            │
+│  Buffer=800B         Indication rx     QAOA solved in        │
+│                                            45ms              │
+│                                           Decision sent      │
 │                                            back to gNB"      │
 │                                                              │
-│  Terminal 4: Live chart updating with metrics  '''           │
+│  Terminal 4: Live chart updating with metrics                │
 └──────────────────────────────────────────────────────────────┘
 
 # Phase 1: Set Up the RIC Platform
